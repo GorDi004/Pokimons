@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/ico" size="32x32" href="images/2.ico">
+    <title>Pokemons</title>
+</head>
+
+<body>
+    <div class="header">
+        <p>Pokemons</p>
+        <input id="search" type="text" onkeyup="Searching(1)" placeholder="Search by name...">
+    </div>
+
+    <table class="Table_1" id="Table_id">
+        <tr>
+            <th onclick="Sort_table('Table_1', 0)">Number &#10004;</th>
+            <th>Logo</th>
+            <th onclick="Sort_table('Table_1', 2)">Name &#10004;</th>
+            <th onclick="Sort_table('Table_1', 3)">Type &#10004;</th>
+            <th onclick="Sort_table('Table_1', 4)">View &#10004;</th>
+            <th>Height</th>
+            <th>Weight</th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td><a href="https://en.wikipedia.org/wiki/Bulbasaur"><img src="images/bulbasaur.png" alt="Bulbasaur"></a></td>
+            <td>Bulbasaur</td>
+            <td>Grass<br>Poison</td>
+            <td>Corn</td>
+            <td>0.7 m</td>
+            <td>6.9 kg</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td><a href="https://pokemon.fandom.com/wiki/Ivysaur"><img src="images/ivysaur.png" alt="Ivysaur"></a>
+            </td>
+            <td>Ivysaur</td>
+            <td>Grass<br>Poison</td>
+            <td>Corn</td>
+            <td>1 m</td>
+            <td>13 kg</td>
+        </tr>
+        <tr>
+            <td>003</td>
+            <td><a href="https://en.wikipedia.org/wiki/Venusaur"><img src="images/venusaur.png" alt="Venusaur"></a>
+            </td>
+            <td>Venusaur</td>
+            <td>Grass<br>Poison</td>
+            <td>Corn</td>
+            <td>2 m</td>
+            <td>100 kg</td>
+        </tr>
+        <tr>
+            <td>004</td>
+            <td><a href="https://en.wikipedia.org/wiki/Charmander"><img src="images/charmander.png" alt="Charmander"></a>
+            </td>
+            <td>Charmander</td>
+            <td>Fire</td>
+            <td>Lizard</td>
+            <td>0.6 m</td>
+            <td>8.5 kg</td>
+        </tr>
+        <tr>
+            <td>005</td>
+            <td><a href="https://pokemon.fandom.com/wiki/Charmeleon"><img src="images/charmeleon.png" alt="Charmeleon"></a>
+            </td>
+            <td>Charmeleon</td>
+            <td>Fier</td>
+            <td>Flame</td>
+            <td>1.1 m</td>
+            <td>19 kg</td>
+        </tr>
+        <tr>
+            <td>006</td>
+            <td><a href="https://en.wikipedia.org/wiki/Charizard"><img src="images/charizard.png" alt="Charizadr"></a></td>
+            <td>Charizard</td>
+            <td>Fire<br>Flying</td>
+            <td>Flame</td>
+            <td>1.7 m</td>
+            <td>90.5 kg</td>
+        </tr>
+        <tr>
+            <td>007</td>
+            <td><a href="https://en.wikipedia.org/wiki/Squirtle"><img src="images/squirtle.png" alt="Squirtle"></a>
+            </td>
+            <td>Squirtle</td>
+            <td>Water</td>
+            <td>Turtle</td>
+            <td>0.5 m</td>
+            <td>9 kg</td>
+        </tr>
+        <tr>
+            <td>008</td>
+            <td><a href="https://pokemon.fandom.com/wiki/Wartortle"><img src="images/wartortle.png" alt="Wartortle"></a>
+            </td>
+            <td>Wartortle</td>
+            <td>Water</td>
+            <td>Turtle</td>
+            <td>1 m</td>
+            <td>22.5 kg</td>
+        </tr>
+        <tr>
+            <td>009</td>
+            <td><a href="https://pokemon.fandom.com/wiki/Blastoise"><img src="images/blastoise.png" alt="Blastoise"></a>
+            </td>
+            <td>Blastoise</td>
+            <td>Water</td>
+            <td>Shellfish</td>
+            <td>1.6 m</td>
+            <td>85.5 kg</td>
+        </tr>
+        <tr>
+            <td>010</td>
+            <td><a href="https://pokemon.fandom.com/wiki/Caterpie"><img src="images/caterpie.png" alt="Caterpie"></a>
+            </td>
+            <td>Caterpie</td>
+            <td>Bug</td>
+            <td>Caterpillar</td>
+            <td>0.3 m</td>
+            <td>2.7 kg</td>
+        </tr>
+        <tr>
+            <td>011</td>
+            <td><a href="https://pokemon.fandom.com/wiki/Metapod"><img src="images/metapod.png" alt="Metapod"></a>
+            </td>
+            <td>Metapod</td>
+            <td>Bug</td>
+            <td>Cocoon</td>
+            <td>0.7 m</td>
+            <td>9.9 kg</td>
+        </tr>
+        <tr>
+            <td>012</td>
+            <td><a href="https://pokemon.fandom.com/wiki/Butterfree"><img src="images/butterfree.png" alt="Butterfree"></a>
+            </td>
+            <td>Butterfree</td>
+            <td>Bug<br>Flying</td>
+            <td>Butterfly</td>
+            <td>1.1 m</td>
+            <td>32 kg</td>
+        </tr>
+        <tr>
+            <td>013 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Weedle"><img src="images/weedle.png" alt="Weedle"></a></td>
+            <td>Weedle</td>
+            <td>Bug<br>Poison</td>
+            <td>Worm</td>
+            <td>0.3 m</td>
+            <td>3.2 kg</td>
+        </tr>
+        <tr>
+            <td>014 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Kakuna"><img src="images/kakuna.png" alt="Kakuna"></a></td>
+            <td>Kakuna</td>
+            <td>Bug<br>Poison</td>
+            <td>Cocoon</td>
+            <td>0.6 m</td>
+            <td>10 kg</td>
+        </tr>
+        <tr>
+            <td>015 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Beedrill"><img src="images/beedrill.png" alt="Beedrill"></a>
+            </td>
+            <td>Beedrill</td>
+            <td>Bug<br>Poison</td>
+            <td>Poison Bee</td>
+            <td>1 m</td>
+            <td>29.5 kg</td>
+        </tr>
+        <tr>
+            <td>016 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Pidgey"><img src="images/pidgey.png" alt="Pidgey"></a></td>
+            <td>Pidgey</td>
+            <td>Normal<br>Flying</td>
+            <td>Bird</td>
+            <td>0.3 m</td>
+            <td>1.8 kg</td>
+        </tr>
+        <tr>
+            <td>017 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Pidgeotto"><img src="images/pidgeotto.png" alt="Pidgeotto"></a>
+            </td>
+            <td>Pidgeotto</td>
+            <td>Normal<br>Flying</td>
+            <td>Bird</td>
+            <td>1.1 m</td>
+            <td>30 kg</td>
+        </tr>
+        <tr>
+            <td>018 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Pidgeot"><img src="images/pidgeot.png" alt="Pidgeot"></a>
+            </td>
+            <td>Pidgeot</td>
+            <td>Normal<br>Flying</td>
+            <td>Bird</td>
+            <td>1.5 m</td>
+            <td>39.5 kg</td>
+        </tr>
+        <tr>
+            <td>019 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Rattata"><img src="images/rattata.png" alt="Rattata"></a>
+            </td>
+            <td>Rattata</td>
+            <td>Normal</td>
+            <td>Rat</td>
+            <td>0.3 m</td>
+            <td>3.5 kg</td>
+        </tr>
+        <tr>
+            <td>020 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Raticate"><img src="images/raticate.png" alt="Raticate"></a>
+            </td>
+            <td>Raticate</td>
+            <td>Normal</td>
+            <td>Rat</td>
+            <td>0.7 m</td>
+            <td>15.5 kg</td>
+        </tr>
+        <tr>
+            <td>021 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Spearow"><img src="images/spearow.png" alt="Spearow"></a>
+            </td>
+            <td>Spearow</td>
+            <td>Normal<br>Flying</td>
+            <td>Bird</td>
+            <td>0.3 m</td>
+            <td>2 kg</td>
+        </tr>
+        <tr>
+            <td>022 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Fearow"><img src="images/fearow.png" alt="Fearow"></a></td>
+            <td>Fearow</td>
+            <td>Normal<br>Flying</td>
+            <td>Bird</td>
+            <td>1.2 m</td>
+            <td>38 kg</td>
+        </tr>
+        <tr>
+            <td>023 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Ekans"><img src="images/ekans.png" alt="Ekans"></a></td>
+            <td>Ekans</td>
+            <td>Poison</td>
+            <td>Snake</td>
+            <td>2 m</td>
+            <td>6.9 kg</td>
+        </tr>
+        <tr>
+            <td>024 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Arbok"><img src="images/arbok.png" alt="Arbok"></a></td>
+            <td>Arbok</td>
+            <td>Poison</td>
+            <td>Cobra</td>
+            <td>3.5 m</td>
+            <td>65 kg</td>
+        </tr>
+        <tr>
+            <td>025 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Pikachu"><img src="images/pikachu.png" alt="Pikachu"></a>
+            </td>
+            <td>Pikachu</td>
+            <td>Electric</td>
+            <td>Mouse</td>
+            <td>0.4 m</td>
+            <td>6 kg</td>
+        </tr>
+        <tr>
+            <td>026 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Raichu"><img src="images/raichu.png" alt="Raichu"></a></td>
+            <td>Raichu</td>
+            <td>Electric</td>
+            <td>Mouse</td>
+            <td>0.8 m</td>
+            <td>30 kg</td>
+        </tr>
+        <tr>
+            <td>027 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Sandshrew"><img src="images/sandshrew.png" alt="Sandshrew"></a>
+            </td>
+            <td>Sandshrew</td>
+            <td>Ground</td>
+            <td>Mouse</td>
+            <td>0.6 m</td>
+            <td>12 kg</td>
+        </tr>
+        <tr>
+            <td>028 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Sandslash"><img src="images/sandslash.png" alt="Sandslash"></a>
+            </td>
+            <td>Sandslash</td>
+            <td>Ground</td>
+            <td>Mouse</td>
+            <td>1 m</td>
+            <td>29.5 kg</td>
+        </tr>
+        <tr>
+            <td>029 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Nidoran♀"><img src="images/nidoran♀.png" alt="Nidoran♀"></a>
+            </td>
+            <td>Nidoran♀</td>
+            <td>Poison</td>
+            <td>Poison Spike</td>
+            <td>0.4 m</td>
+            <td>7 kg</td>
+        </tr>
+        <tr>
+            <td>030 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Nidorina"><img src="images/nidorina.png" alt="Nidorina"></a>
+            </td>
+            <td>Nidorina</td>
+            <td>Poison</td>
+            <td>Poison Spike</td>
+            <td>0.8 m</td>
+            <td>20 kg</td>
+        </tr>
+        <tr>
+            <td>031 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Nidoqueen"><img src="images/nidoqueen.png" alt="Nidoqueen"></a>
+            </td>
+            <td>Nidoqueen</td>
+            <td>Poison<br>Ground</td>
+            <td>Drill</td>
+            <td>1.3 m</td>
+            <td>60 kg</td>
+        </tr>
+        <tr>
+            <td>032 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Nidoran♂"><img src="images/nidoran♂.png" alt="Nidoran♂"></a>
+            </td>
+            <td>Nidoran♂</td>
+            <td>Poison</td>
+            <td>Poison Spike</td>
+            <td>0.5 m</td>
+            <td>9 kg</td>
+        </tr>
+        <tr>
+            <td>033 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Nidorino"><img src="images/nidorino.png" alt="Nidorino"></a>
+            </td>
+            <td>Nidorino</td>
+            <td>Poison</td>
+            <td>Poison Spike</td>
+            <td>0.9 m</td>
+            <td>19.5 kg</td>
+        </tr>
+        <tr>
+            <td>034 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Nidoking"><img src="images/nidoking.png" alt="Nidoking"></a>
+            </td>
+            <td>Nidoking</td>
+            <td>Poison<br>Ground</td>
+            <td>Drill</td>
+            <td>1.4 m</td>
+            <td>62 kg</td>
+        </tr>
+        <tr>
+            <td>035 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Clefairy"><img src="images/clefairy.png" alt="Clefairy"></a>
+            </td>
+            <td>Clefairy</td>
+            <td>Fairy</td>
+            <td>Fairy</td>
+            <td>0.6 m</td>
+            <td>7.5 kg</td>
+        </tr>
+        <tr>
+            <td>036 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Clefable"><img src="images/clefable.png" alt="Clefable"></a>
+            </td>
+            <td>Clefable</td>
+            <td>Fairy</td>
+            <td>Fairy</td>
+            <td>1.3 m</td>
+            <td>40 kg</td>
+        </tr>
+        <tr>
+            <td>037 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Vulpix"><img src="images/vulpix.png" alt="Vulpix"></a></td>
+            <td>Vulpix</td>
+            <td>Fire</td>
+            <td>Fox</td>
+            <td>0.6 m</td>
+            <td>9.9 kg</td>
+        </tr>
+        <tr>
+            <td>038 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Ninetales"><img src="images/ninetales.png" alt="Ninetales"></a>
+            </td>
+            <td>Ninetales</td>
+            <td>Fire</td>
+            <td>Fox</td>
+            <td>1.1 m</td>
+            <td>19.9 kg</td>
+        </tr>
+        <tr>
+            <td>039 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Jigglypuff"><img src="images/jigglypuff.png" alt="Jigglypuff"></a>
+            </td>
+            <td>Jigglypuff</td>
+            <td>Normal<br>Fairy</td>
+            <td>Ball</td>
+            <td>0.5 m</td>
+            <td>5.5 kg</td>
+        </tr>
+        <tr>
+            <td>040 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Wigglytuff"><img src="images/wigglytuff.png" alt="Wigglytuff"></a>
+            </td>
+            <td>Wigglytuff</td>
+            <td>Normal<br>Fairy</td>
+            <td>Ball</td>
+            <td>1 m</td>
+            <td>12 kg</td>
+        </tr>
+        <tr>
+            <td>041 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Zubat"><img src="images/zubat.png" alt="Zubat"></a></td>
+            <td>Zubat</td>
+            <td>Poison<br>Flying</td>
+            <td>Bat</td>
+            <td>0.8 m</td>
+            <td>7.5 kg</td>
+        </tr>
+        <tr>
+            <td>042 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Golbat"><img src="images/golbat.png" alt="Golbat"></a></td>
+            <td>Golbat</td>
+            <td>Poison<br>Flying</td>
+            <td>Bat</td>
+            <td>1.6 m</td>
+            <td>55 kg</td>
+        </tr>
+        <tr>
+            <td>043 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Oddish"><img src="images/oddish.png" alt="Oddish"></a></td>
+            <td>Oddish</td>
+            <td>Grass<br>Poison</td>
+            <td>Weed</td>
+            <td>0.5 m</td>
+            <td>5.4 kg</td>
+        </tr>
+        <tr>
+            <td>044 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Gloom"><img src="images/gloom.png" alt="Gloom"></a></td>
+            <td>Gloom</td>
+            <td>Grass<br>Poison</td>
+            <td>Weed</td>
+            <td>0.8 m</td>
+            <td>8.6 kg</td>
+        </tr>
+        <tr>
+            <td>045 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Vileplume"><img src="images/vileplume.png" alt="Vileplume"></a>
+            </td>
+            <td>Vileplume</td>
+            <td>Grass<br>Poison</td>
+            <td>Flower</td>
+            <td>1.2 m</td>
+            <td>18.6 kg</td>
+        </tr>
+        <tr>
+            <td>046 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Paras"><img src="images/paras.png" alt="Paras"></a></td>
+            <td>Paras</td>
+            <td>Bug<br>Grass</td>
+            <td>Mushroom</td>
+            <td>0.3 m</td>
+            <td>5.4 kg</td>
+        </tr>
+        <tr>
+            <td>047 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Parasect"><img src="images/parasect.png" alt="Parasect"></a>
+            </td>
+            <td>Parasect</td>
+            <td>Bug<br>Grass</td>
+            <td>Mushroom</td>
+            <td>1 m</td>
+            <td>29.5 kg</td>
+        </tr>
+        <tr>
+            <td>048 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Venonat"><img src="images/venonat.png" alt="Venonat"></a>
+            </td>
+            <td>Venonat</td>
+            <td>Bug<br>Poison</td>
+            <td>Bug</td>
+            <td>1 m</td>
+            <td>30 kg</td>
+        </tr>
+        <tr>
+            <td>049 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Venomoth"><img src="images/venomoth.png" alt="Venomoth"></a>
+            </td>
+            <td>Venomoth</td>
+            <td>Bug<br>Poison</td>
+            <td>Bug</td>
+            <td>1.5 m</td>
+            <td>12.5 kg</td>
+        </tr>
+        <tr>
+            <td>050 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Diglett"><img src="images/diglett.png" alt="Diglett"></a>
+            </td>
+            <td>Diglett</td>
+            <td>Ground</td>
+            <td>Mole</td>
+            <td>0.2 m</td>
+            <td>0.8 kg</td>
+        </tr>
+        <tr>
+            <td>051 </td>
+            <td><a href="https://pokemon.fandom.com/wiki/Dugtrio"><img src="images/dugtrio.png" alt="Dugtrio"></a>
+            </td>
+            <td>Dugtrio</td>
+            <td>Ground</td>
+            <td>Mole</td>
+            <td>0.7 m</td>
+            <td>33.3 kg</td>
+        </tr>
+    </table>
+
+    <div class="footer">
+        <p>Pokemons</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

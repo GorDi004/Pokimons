@@ -1,0 +1,85 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header,
+.footer {
+    display: flex;
+    margin: auto;
+    background-color: goldenrod;
+    color: white;
+    margin: -0.75%;
+    padding-left: 5%;
+    font-size: 30px;
+    text-shadow: rgb(66, 52, 2) 1px 1px 0, rgb(66, 52, 2) 2px 2px 0,
+        rgb(66, 52, 2) 3px 3px 0, rgb(66, 52, 2) 4px 4px 0,
+        rgb(66, 52, 2) 5px 5px 0;
+    margin-bottom: 10px;
+}
+
+.header input[type=text] {
+    padding: 10px;
+    width: 300px;
+    margin-left: 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    border: 2.5px solid black;
+    border-radius: 30px;
+    background-color: rgb(248, 248, 248);
+}
+
+.header input[type=text]:hover {
+    background-color: white;
+}
+
+table {
+    margin: auto;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+table td {
+    padding: 3.6em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+table th {
+    padding: 1em;
+    font-size: 25px;
+}
+
+table tr {
+    background-color: grey;
+}
+
+th {
+    color: white;
+    text-shadow: rgb(66, 52, 2) 1px 1px 0, rgb(66, 52, 2) 2px 2px 0,
+        rgb(66, 52, 2) 3px 3px 0, rgb(66, 52, 2) 4px 4px 0,
+        rgb(66, 52, 2) 5px 5px 0;
+    background-color: brown;
+}
+
+.footer {
+    width: 80%;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    background-color: brown;
+    color: gold;
+    margin-bottom: -15px;
+    padding-left: 85%;
+    text-shadow: black 1px 1px 0, black 2px 2px 0,
+        black 3px 3px 0, black 4px 4px 0,
+        black 5px 5px 0;
+}
+
+table th:hover {
+    cursor: pointer;
+    background-color: rgb(218, 116, 116);
+}
